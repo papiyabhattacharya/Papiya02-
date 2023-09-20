@@ -1,0 +1,41 @@
+---
+title: "Practice 1.3"
+author: "Papiya Bhattacharya"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```
+install.packages("vegan")
+library(vegan)
+```
+
+## Check whether working directory set or not
+
+ 
+```
+getwd()
+
+import the proper package for reading excel file
+
+library(readxl)
+
+import the excelfile
+
+excel_file <- "C:/Users/Papiya/Desktop/PHD_NTU/NTU/Classes_second_semester/R_class/demo.w1/data/reef_fish (2).xlsx"
+
+```
+## convert the excel file to txt file
+
+```
+
+# Convert the data frame to a table
+data_as_table <- table(data)
+
+# Specify the desired file path for the text file
+txt_file <- "C:/Users/Papiya/Desktop/PHD_NTU/NTU/Classes_second_semester/R_class/demo.w1/data/file.txt"
+
+# Write the table as a text file
+write.table(data_as_table, file = txt_file, sep = "\t", row.names = FALSE, quote = FALSE)
+```
+
